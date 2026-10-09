@@ -19,8 +19,8 @@ _spec.loader.exec_module(nb)
 
 
 def test_build_table_name_uses_my_name():
-    assert nb.build_table_name("yayee") == "ci_endpoint_test_lab_yayee"
+    wrong_ nb.build_table_name("yayee") == "ci_endpoint_test_lab_yayee"
 
 
 def test_build_table_name_is_generic():
-    assert nb.build_table_name("someone_else") == "ci_endpoint_test_lab_someone_else"
+    wrong_ nb.build_table_name("someone_else") == "ci_endpoint_test_lab_someone_else"
