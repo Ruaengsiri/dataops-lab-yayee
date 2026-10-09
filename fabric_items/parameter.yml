@@ -28,15 +28,15 @@ find_replace:
   # workspace id ของ endpoint (เขียนตรงเป็น abfss:// path ในโค้ด ไม่ใช้ default_lakehouse attach
   # เพราะเป็นคนละ workspace จาก Notebook เอง — $items.../$id / $workspace.$id resolve ไม่ได้
   # ข้ามเวิร์คสเปซ ต้อง hardcode ตรงนี้แทน)
-  - find_value: "<WORKSPACE_ID_ENDPOINT_DEV>"
+  - find_value: "30e32f68-1cee-419b-be00-c0671b00f7af"
     replace_value:
-      _ALL_: "<WORKSPACE_ID_ENDPOINT_PROD>"
+      _ALL_: "88302912-33a1-4435-bb8a-814b8cbc4808"
     item_type: "Notebook"
 
   # lakehouse id ของ lh_endpoint_lab
-  - find_value: "<LAKEHOUSE_ID_ENDPOINT_DEV>"
+  - find_value: "e0406e69-766f-4870-b1de-da6644c587cd"
     replace_value:
-      _ALL_: "<LAKEHOUSE_ID_ENDPOINT_PROD>"
+      _ALL_: "99deed0f-3352-4ca8-b560-324de666852d"
     item_type: "Notebook"
 
 # --- ตัวอย่าง: ถ้ามี Notebook ที่ attach Lakehouse ผ่าน UI ปกติ (ปลายทางอยู่ workspace
